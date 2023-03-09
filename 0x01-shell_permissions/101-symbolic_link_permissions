@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown -h vincent:school hello
+chown -h vincent:school hello
