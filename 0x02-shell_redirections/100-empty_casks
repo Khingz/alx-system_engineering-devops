@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty | rev | cut -d '/' -f 1 | rev
+find . -empty | LC_ALL=C sort -f | rev | cut -d '/' -f 1 | rev
