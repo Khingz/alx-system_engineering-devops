@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+dir="/etc/passwd"
+num_lines=$(wc -l < "$dir")
+i=1
+while (( i<=num_lines ))
+do
+	line=$(sed -n "${i}p" "$dir")
+	echo "$line" | cut -d':' -f1,3,6
+	i=$(( i+1 ))
+done
