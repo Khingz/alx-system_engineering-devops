@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#behead that dude
+
+kill -9 "$(pgrep -f 7-highlander)"
