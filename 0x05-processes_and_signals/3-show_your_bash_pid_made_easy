@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#use pgrep to print processes with bash cmd
+
+pgrep bash -l
