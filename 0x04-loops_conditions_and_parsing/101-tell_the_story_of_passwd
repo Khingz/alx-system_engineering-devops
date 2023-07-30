@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#comment
+IFS=':'
+while read -r user pword uid gid info home shell
+do
+  echo "The user $user is part of the $gid gang, lives in $home and"\
+  "rides $shell. $uid's place is protected by the passcode $pword,"\
+  "more info about the user here: $info"
+done < "/etc/passwd"

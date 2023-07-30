@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Parse a Apache log files in list format displaying ip and http
+
+awk '{print $1 " " $9}' apache-access.log
