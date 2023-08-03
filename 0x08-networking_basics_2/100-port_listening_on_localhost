@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# creates a local connection to listen to port
+
+nc -l -p 98
