@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Copies a file from local to remote server
+
+if [ "$#" -gt 3 ]; then
+
+fi
