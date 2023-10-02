@@ -19,8 +19,7 @@ exec {'Add env':
 
 exec { 'add header':
   provider    => shell,
-  command     => 'sudo sed -i "s|index index.html index.htm;|index index.html index.htm;\n\tadd_header X-Served-By \$HOSTNAME;|" /etc/nginx/sites-available/default
-',
+  command     => 'sudo sed -i "s|index index.html index.htm;|index index.html index.htm;\n\tadd_header X-Served-By \$HOSTNAME;|" /etc/nginx/sites-available/default',
   require      => Exec['Add env'],
 }
 
