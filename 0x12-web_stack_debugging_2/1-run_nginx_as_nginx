@@ -3,4 +3,6 @@
 if ! id "nginx" &>/dev/null; then
 	sudo useradd nginx
 fi
-sed -i 's/^.*www-data.*$/nginx/' /etc/nginx/nginx.conf
+sed -i 's/# user nginx/user nginx;/' /etc/nginx/nginx.conf
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+service nginx restart
