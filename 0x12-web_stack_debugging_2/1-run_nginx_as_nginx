@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Nginx is running as the nginx user.
+if ! id "nginx" &>/dev/null; then
+	sudo useradd nginx
+fi
+sed -i 's/^.*www-data.*$/nginx/' /etc/nginx/nginx.conf
