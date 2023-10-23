@@ -1,4 +1,4 @@
-#!/usr/bin/python3i
+#!/usr/bin/python3
 """Makes a get request to json placeholder"""
 import requests
 from sys import argv
