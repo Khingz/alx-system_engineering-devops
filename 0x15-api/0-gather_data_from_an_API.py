@@ -4,7 +4,7 @@ import requests
 from sys import argv
 
 
-def main():
+if __name__ == "__main__":
     """main api method"""
     url = 'https://jsonplaceholder.typicode.com/'
     res = requests.get(url + "users/{}".format(argv[1]))
@@ -16,7 +16,3 @@ def main():
         emp.get("name"), len(c), len(todo)))
     for item in c:
         print('\t {}'.format(item.get("title")))
-
-
-if __name__ == "__main__":
-    main()
