@@ -6,7 +6,7 @@ from sys import argv
 
 def main():
     """main api method"""
-    url = f'https://jsonplaceholder.typicode.com/'
+    url = 'https://jsonplaceholder.typicode.com/'
     res = requests.get(url + "users/{}".format(argv[1]))
     res_t = requests.get(url + "todos", params={"userId": argv[1]})
     emp = (res.json())
