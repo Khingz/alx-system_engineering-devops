@@ -14,10 +14,8 @@ def main():
         if response_2.status_code == 200:
             todo = response_2.json()
             c = [item for item in todo if item['completed']]
-            print("Employee {} is done with tasks({}/{}):".format(
-                emp.get("name"), len(c), len(todo)))
-            for item in c:
-                print('\t {}'.format(item.get("title")))
+            print(f'Employee {emp["name"]} is \
+                    done with tasks({len(c)}/{len(todo)}):
 
 
 if __name__ == "__main__":
